@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+p {
+  color: #737373;
+}
+
 .my-bg {
   background-image: url("/assets/hero-cover.jpg");
   background-position: center;
@@ -102,6 +106,96 @@
 .bookContainer select {
   width: 246px;
   height: 50px;
+}
+
+.clients .headerClients {
+  margin-bottom: 80px;
+}
+.clients .headerClients h2 {
+  margin: 0 auto;
+  width: 361px;
+  height: 57px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.clients .headerClients p {
+  margin: 10px auto;
+  width: 470px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.clients .cardClients {
+  margin: 0 auto;
+  background-color: white;
+  border: solid 1px #dedede;
+  border-radius: 5px;
+  width: 327px;
+  height: 376px;
+  padding: 40px 35px;
+  display: flex;
+  flex-direction: column;
+}
+.clients .cardClients img {
+  margin: 0 auto;
+}
+.clients .cardClients .card-body {
+  width: 219px;
+  height: 225px;
+  margin: 10px auto;
+}
+.clients .cardClients .card-body p {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.aboutUs h2 {
+  margin: 0 auto;
+  width: 195px;
+  height: 57px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.aboutUs p {
+  margin: 10px auto;
+  width: 470px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.aboutUs .imgLegend {
+  height: 356px;
+}
+.aboutUs .imgLegend .mainLegend h3 {
+  width: 306px;
+  height: 32px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.aboutUs .imgLegend .mainLegend p {
+  text-align: start;
+  width: 330px;
+  height: 60px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.aboutUs .imgLegend .legendCommit h3 {
+  width: 286px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.aboutUs .imgLegend .legendCommit p {
+  text-align: start;
+  width: 286px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
