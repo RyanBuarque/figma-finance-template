@@ -331,3 +331,106 @@ p {
     }
   }
 }
+
+.branches {
+  background-color: #252b42;
+
+  .branchesText {
+    width: 602px;
+    height: 329px;
+    color: rgba(255, 255, 255, 1);
+    h3 {
+      font-size: 40px;
+      font-weight: 700;
+      width: 476px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      width: 455px;
+    }
+  }
+}
+
+.secondBook {
+  background: linear-gradient(
+    180deg,
+    rgba(37, 43, 66, 1) 50%,
+    RGB(248, 249, 250) 50%
+  );
+
+  img {
+    margin-right: -1px;
+  }
+
+  .secondBookContainer {
+    background-color: white;
+    height: 610px;
+    width: 610px;
+    padding: 50px;
+
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    button {
+      margin-top: 40px;
+      padding: 15px 40px;
+      border-radius: 5px;
+      height: 52px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .secondBookInfo {
+      width: 100%;
+      height: 366px;
+      border-radius: 1px;
+
+      .SecondInfoChild {
+        margin: 10px 0px;
+        width: 100%;
+        height: 84px;
+
+        label {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    input,
+    select {
+      width: 246px;
+      height: 50px;
+    }
+  }
+}
+
+.footer-third {
+  background-color: rgb(14, 17, 26);
+  color: white;
+
+  a {
+    color: #9a999f;
+  }
+
+  a:hover {
+    color: white;
+  }
+  
+  a {
+    i {
+      color: white;
+    }
+
+    span {
+      font-size: 0.8rem;
+      margin-left: 1rem;
+    }
+
+    text-decoration: none;
+    color: white;
+  }
+}
