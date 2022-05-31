@@ -67,8 +67,8 @@
                 </div>
             </nav>
             <div class="d-flex my-5">
-                <div class="d-flex flex-column flex-lg-row container justify-content-evenly align-items-center mx-auto my-5">
-                    <div class="d-flex flex-column headerContainer">
+                <div class="d-flex flex-column flex-lg-row container justify-content-between align-items-center mx-auto my-5">
+                    <div class="d-flex flex-column headerContainer align-items-center">
                         <h1>International Network</h1>
                         <p>
                             We know how large objects will act, but things on a small scale.
@@ -133,7 +133,7 @@
     </header>
 
     <main>
-        <div class="clients mx-auto d-flex flex-column justify-content-center my-5 py-5">
+        <div class="container clients mx-auto d-flex flex-column justify-content-center my-5 py-5">
             <div class="d-flex flex-column mx-auto headerClients">
                 <h2>What Clients Say</h2>
                 <p>
@@ -143,7 +143,7 @@
             </div>
 
             <div class="d-flex mx-auto">
-                <div class="row row-cols-1 row-cols-xl-3 g-4">
+                <div class="row row-cols-1 row-cols-lg-3 g-4">
                     <div class="col">
                         <div class="cardClients">
                             <img src="assets/user.1.jpg" width="149px" height="149px" />
@@ -212,13 +212,13 @@
             </div>
 
             <div class="">
-                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between my-5 py-5 col-7 mx-auto">
+                <div class="d-flex container flex-column flex-xl-row align-items-center justify-content-center my-5 py-5 col-7 mx-auto">
                     <div class="">
-                        <img src="assets/card-item.png" class="img-fluid rounded-start" />
+                        <img src="assets/card-item.png" class="widthControl"/>
                     </div>
                     <div class="">
                         <div class="">
-                            <div class="d-flex flex-column imgLegend justify-content-between">
+                            <div class="d-flex flex-column imgLegend justify-content-between p-5">
                                 <div class="d-flex flex-column mainLegend mb-4">
                                     <h3>Most trusted in our field</h3>
                                     <p>
@@ -260,9 +260,9 @@
                     of Classical physics: Newtonian mechanics
                 </p>
             </div>
-            <div class="d-flex flex-column flex-lg-row justify-content-center">
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-end mx-auto">
                 <div class="pricingCard">
-                    <div class="card-body">
+                    <div class="cardBody">
                         <div class="cardHeader">
                             <h2>FREE</h2>
                             <p>Organize across all apps by hand</p>
@@ -289,22 +289,22 @@
                             <p>Unlimited product updates</p>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-secondary fs-3"></i>
+                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
                             <p>1GB Cloud storage</p>
                         </div>
 
                         <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-secondary fs-3"></i>
+                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
                             <p>Email and community support</p>
                         </div>
                     </div>
-                    <a class="btn btn-azul w-100" href="#" role="button">
+                    <a class="btn btn-azul" href="#" role="button">
                         Become a member
                         <i class="ms-2 fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
-                <div class="pricingCard">
-                    <div class="card-body">
+                <div class="pricingCard pricingCardSelected">
+                    <div class="cardBody">
                         <div class="cardHeader">
                             <h2>STANDARD</h2>
                             <p>Organize across all apps by hand</p>
@@ -331,22 +331,23 @@
                             <p>Unlimited product updates</p>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-secondary fs-3"></i>
+                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
                             <p>1GB Cloud storage</p>
                         </div>
 
                         <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-secondary fs-3"></i>
+                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
                             <p>Email and community support</p>
                         </div>
                     </div>
-                    <a class="btn btn-azul w-100" href="#" role="button">
+                    <!-- butão desabilitado -->
+                    <a class="btn btn-azul disabled" href="#" role="button">
                         Become a member
                         <i class="ms-2 fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
                 <div class="pricingCard">
-                    <div class="card-body">
+                    <div class="cardBody">
                         <div class="cardHeader">
                             <h2>PREMIUM</h2>
                             <p>Organize across all apps by hand</p>
@@ -373,23 +374,23 @@
                             <p>Unlimited product updates</p>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-secondary fs-3"></i>
+                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
                             <p>1GB Cloud storage</p>
                         </div>
 
                         <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-secondary fs-3"></i>
+                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
                             <p>Email and community support</p>
                         </div>
                     </div>
-                    <a class="btn btn-azul w-100" href="#" role="button">
+                    <a class="btn btn-azul" href="#" role="button">
                         Become a member
                         <i class="ms-2 fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="branches d-flex align-items-center justify-content-center">
+        <div class="branches d-flex flex-column flex-lg-row align-items-center justify-content-center">
             <div class="branchesText d-flex flex-column justify-content-evenly my-5">
                 <h3>We Have Branches All Over The World</h3>
                 <p>
@@ -449,79 +450,67 @@
         </div>
     </main>
 
-    <footer class="footer-third container">
-        <div class="d-flex flex-row justify-content-around flex-wrap py-5 custom">
-            <div class="d-flex col-4 m-4 col-lg-3 m-lg-0 flex-column">
-                <h6 class="mb-4 fw-bold fs-5">Get In Touch</h6>
+    <footer>
+        <div class="d-flex container mx-auto flex-row justify-content-evenly flex-wrap py-5">
+            <div class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column">
+                <h6 class="mb-4">Get In Touch</h6>
                 <a class="my-2" href="#">
-                    <i class="fa-solid fa-angle-right me-2"></i>
                     the quick fox jumps over the lazy dog
                 </a>
                 <a class="my-2" href="#">
-                    <i class="fa-solid fa-angle-right me-2"></i>
-                    Sociais
+                    <i class="fa-brands fa-facebook fs-3 me-2"></i>
+                    <i class="fa-brands fa-instagram fs-3 mx-2"></i>
+                    <i class="fa-brands fa-twitter fs-3 mx-2"></i>
                 </a>
             </div>
-            <div class="d-flex col-4 m-4 col-lg-3 m-lg-0 flex-column">
-                <h6 class="mb-4 fw-bold fs-5">Company info</h6>
+            <div class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column">
+                <h6 class="mb-4">Company info</h6>
                 <a class="my-2" href="#">
-                    <i class="fa-solid fa-angle-right me-2"></i>
                     About Us
                 </a>
-                <a class="my-2" href="#" target="_blank">
-                    <i class="fa-solid fa-angle-right me-2"></i>
+                <a class="my-2" href="#">
                     Carrier
                 </a>
-                <a class="my-2" href="#" target="_blank">
-                    <i class="fa-solid fa-angle-right me-2"></i>
+                <a class="my-2" href="#">
                     We are hiring
                 </a>
-                <a class="my-2" href="#" target="_blank">
-                    <i class="fa-solid fa-angle-right me-2"></i>
+                <a class="my-2" href="#">
                     Blog
                 </a>
             </div>
-            <div class="d-flex col-4 m-4 col-lg-3 m-lg-0 flex-column">
-                <h6 class="mb-4 fw-bold fs-5">Features</h6>
-                <a class="my-2" href="#" target="_blank">
-                    <i class="fa-solid fa-angle-right me-2"></i>
+            <div class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column">
+                <h6 class="mb-4">Features</h6>
+                <a class="my-2" href="#">
                     Business Marketing
                 </a>
-                <a class="my-2" href="#" target="_blank">
-                    <i class="fa-solid fa-angle-right me-2"></i>
+                <a class="my-2" href="#">
                     User Analytic
                 </a>
                 <a class="my-2" href="#">
-                    <i class="fa-solid fa-angle-right me-2"></i>
                     Live Chat
                 </a>
-                <a class="my-2" href="#" target="_blank">
-                    <i class="fa-solid fa-angle-right me-2"></i>
+                <a class="my-2" href="#">
                     Unlimited Support
                 </a>
             </div>
-            <div class="d-flex col-4 m-4 col-lg-3 m-lg-0 flex-column">
-                <h6 class="mb-4 fw-bold fs-5">Resources</h6>
-                <a class="my-2" href="#" target="_blank">
-                    <i class="fa-solid fa-angle-right me-2"></i>
+            <div class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column">
+                <h6 class="mb-4">Resources</h6>
+                <a class="my-2" href="#">
                     IOS & Android
                 </a>
-                <a class="my-2" href="#" target="_blank">
-                    <i class="fa-solid fa-angle-right me-2"></i>
+                <a class="my-2" href="#">
                     Watch a Demo
                 </a>
-                <a class="my-2" href="#" target="_blank">
-                    <i class="fa-solid fa-angle-right me-2"></i>
+                <a class="my-2" href="#">
                     Customers
                 </a>
-                <a class="my-2" href="#" target="_blank">
-                    <i class="fa-solid fa-angle-right me-2"></i>
+                <a class="my-2" href="#">
                     API
                 </a>
             </div>
         </div>
-        <p class="text-center py-4 mb-0">
-            &copy; Made With Love By Figmaland All Right Reserved
+        <p class="text-center py-4 mb-0 bg-light">
+             Made With Love By Figmaland &copy; All Right Reserved
         </p>
     </footer>
 </body>

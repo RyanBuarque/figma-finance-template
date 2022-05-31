@@ -32,10 +32,16 @@ p {
 }
 
 .headerContainer {
-  width: 599px;
+  max-width: 599px;
   height: 342px;
 }
+@media (max-width: 991px) {
+  .headerContainer {
+    margin-bottom: 80px;
+  }
+}
 .headerContainer h1 {
+  text-align: center;
   font-weight: 800;
   font-size: 58px;
   color: white;
@@ -131,7 +137,7 @@ p {
   background-color: white;
   border: solid 1px #dedede;
   border-radius: 5px;
-  width: 327px;
+  max-width: 327px;
   height: 376px;
   padding: 40px 35px;
   display: flex;
@@ -153,18 +159,23 @@ p {
 
 .aboutUs h2 {
   margin: 0 auto;
-  width: 195px;
+  max-width: 195px;
   height: 57px;
   font-size: 40px;
   font-weight: 700;
 }
 .aboutUs p {
   margin: 10px auto;
-  width: 470px;
+  max-width: 470px;
   height: 40px;
   font-size: 14px;
   font-weight: 500;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .aboutUs .widthControl {
+    width: 333px;
+  }
 }
 .aboutUs .imgLegend {
   height: 356px;
@@ -217,73 +228,99 @@ p {
   text-align: center;
 }
 .pricing .pricingCard {
-  margin: 0 5px;
+  margin: 0 2px;
   background-color: white;
   border: solid 2px #23a6f0;
   border-radius: 5px;
-  width: 327px;
+  max-width: 327px;
   height: 665px;
-  padding: 40px 35px;
+  padding: 40px 25px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-.pricing .pricingCard .card-body {
+.pricing .pricingCard a {
+  height: 52px;
+  width: 246px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.pricing .pricingCard .cardBody {
   width: 219px;
   height: 225px;
   margin: 10px auto;
+  padding: 0;
 }
-.pricing .pricingCard .card-body .cardHeader h2 {
+.pricing .pricingCard .cardBody .cardHeader h2 {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
 }
-.pricing .pricingCard .card-body .cardHeader p {
+.pricing .pricingCard .cardBody .cardHeader p {
   margin: 35px auto;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
 }
-.pricing .pricingCard .card-body .pricingText p {
+.pricing .pricingCard .cardBody .pricingText p {
   margin: 0 4px;
   color: #23a6f0;
   font-size: 40px;
   font-weight: 700;
   text-align: center;
 }
-.pricing .pricingCard .card-body .pricingText p:first-child {
-  width: 28px;
-}
-.pricing .pricingCard .card-body .pricingText p span {
+.pricing .pricingCard .cardBody .pricingText p span {
   font-size: 14px;
   font-weight: 700;
   color: #23a6f0;
 }
-.pricing .pricingCard .card-body .pricingText p span:last-child {
+.pricing .pricingCard .cardBody .pricingText p span:last-child {
   margin-top: 5px;
   font-weight: 600;
   color: #8ec2f2;
 }
-.pricing .beneficios {
+.pricing .pricingCard .beneficios {
   width: 100%;
 }
-.pricing .beneficios div {
+.pricing .pricingCard .beneficios .selectSecondary {
+  color: #bdbdbd;
+}
+.pricing .pricingCard .beneficios div {
   align-items: flex-start;
   margin: 8px 0;
 }
-.pricing .beneficios div p {
+.pricing .pricingCard .beneficios div p {
   color: #252b42;
   font-size: 14px;
   font-weight: 600;
 }
-.pricing .beneficios div i {
+.pricing .pricingCard .beneficios div i {
   margin-right: 5px;
+}
+.pricing .pricingCardSelected {
+  background-color: #252b42;
+  height: 705px;
+}
+.pricing .pricingCardSelected h2,
+.pricing .pricingCardSelected p {
+  color: white !important;
+}
+.pricing .pricingCardSelected .pricingText p {
+  color: #23a6f0 !important;
+}
+@media (max-width: 991px) {
+  .pricing .pricingCardSelected {
+    margin: 30px auto;
+  }
 }
 
 .branches {
   background-color: #252b42;
 }
 .branches .branchesText {
-  width: 602px;
+  max-width: 602px;
   height: 329px;
   color: white;
 }
@@ -307,7 +344,7 @@ p {
 .secondBook .secondBookContainer {
   background-color: white;
   height: 610px;
-  width: 610px;
+  max-width: 610px;
   padding: 50px;
 }
 .secondBook .secondBookContainer h4 {
@@ -318,7 +355,6 @@ p {
   margin-top: 40px;
   padding: 15px 40px;
   border-radius: 5px;
-  height: 52px;
   font-weight: 700;
   font-size: 14px;
 }
@@ -338,30 +374,35 @@ p {
 }
 .secondBook .secondBookContainer input,
 .secondBook .secondBookContainer select {
-  width: 246px;
+  max-width: 246px;
   height: 50px;
 }
 
-.footer-third {
-  background-color: #0e111a;
-  color: white;
+footer {
+  margin-top: 130px;
+  background-color: white;
 }
-.footer-third a {
-  color: #9a999f;
+footer h6 {
+  color: #252b42;
+  font-size: 24px;
+  font-weight: 700;
 }
-.footer-third a:hover {
-  color: white;
-}
-.footer-third a {
+footer a {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
-  color: white;
 }
-.footer-third a i {
-  color: white;
+footer a:hover {
+  color: #0d6efd;
 }
-.footer-third a span {
-  font-size: 0.8rem;
-  margin-left: 1rem;
+footer i {
+  color: #23a6f0;
+}
+footer i:hover {
+  color: #0d6efd;
+  background-color: whitesmoke;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
