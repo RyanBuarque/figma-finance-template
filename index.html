@@ -20,10 +20,25 @@
                     </a>
                     <button class="navbar-toggler me-1" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon bg-danger"></span>
                     </button>
-                    <div class="offcanvas offcanvas-end w-100 my-bg-canvas" tabindex="-1" id="offcanvasNavbar"
+                    <div class="offcanvas offcanvas-end navCustom" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                BrandName
+                            </h5>
+                            <div>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                                <a href="#" type="button" class="text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+                                    <i><img src="assets/icn menu .icn-xs.png" /></i>
+                                </a>
+                            </div>
+                        </div>
+
                         <div class="offcanvas-body justify-content-around">
                             <ul class="navbar-nav col-5 align-items-center justify-content-center">
                                 <li class="nav-item mx-1">
@@ -42,7 +57,7 @@
                                     <a class="nav-link" href="#">Contact</a>
                                 </li>
                             </ul>
-                            <ul class="navbar-nav col-5 align-items-center justify-content-end">
+                            <ul class="navbar-nav d-none d-lg-flex col-5 align-items-center justify-content-end">
                                 <li class="nav-item mx-4">
                                     <a class="nav-link" href="#">Login</a>
                                 </li>
@@ -54,20 +69,12 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="offcanvas-header justify-content-center">
-                            <button type="button" class="btn d-flex btn-outline-light btn-sm"
-                                data-bs-dismiss="offcanvas" aria-label="Close">
-                                <i class="fa-solid fa-xmark me-2 align-self-center"></i>
-                                <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
-                                    Fechar
-                                </h5>
-                            </button>
-                        </div>
                     </div>
                 </div>
             </nav>
             <div class="d-flex my-5">
-                <div class="d-flex flex-column flex-lg-row container justify-content-between align-items-center mx-auto my-5">
+                <div
+                    class="d-flex flex-column flex-lg-row container justify-content-between align-items-center mx-auto my-5">
                     <div class="d-flex flex-column headerContainer align-items-center">
                         <h1>International Network</h1>
                         <p>
@@ -133,6 +140,76 @@
     </header>
 
     <main>
+        <div class="container mobile mx-auto d-flex flex-column justify-content-center">
+            <div class="d-flex flex-column mx-auto business">
+                <h2>Better Strategy With Quality Business</h2>
+                <p>
+                    Problems trying to resolve the conflict between the two major realms
+                    of Classical physics: Newtonian mechanics
+                </p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center mx-auto cardBusiness">
+                <div class="cardBusinessHeader d-flex align-items-center justify-content-center">
+                    <div class="d-flex justify-content-evenly align-items-center w-100">
+                        <i class="p-3 rounded-circle bg-white">
+                            <img src="assets/vector.png" class="p-1 bg-white" />
+                        </i>
+                        <h4>Investment Trading</h4>
+                    </div>
+                </div>
+                <div class="cardBusinessBody d-flex align-items-center justify-content-center">
+                    <ul class="">
+                        <li>- The best products start with Figma</li>
+                        <li>- Design with real data</li>
+                        <li>- Lightning fast prototyping</li>
+                        <li>- Fastest way to organize</li>
+                        <li>- Work at the speed of thought.</li>
+                        <a href="#">Learn More</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-auto cardBusiness">
+                <div class="cardBusinessHeader d-flex align-items-center justify-content-center">
+                    <div class="d-flex justify-content-evenly align-items-center w-100">
+                        <i class="p-3 rounded-circle bg-white">
+                            <img src="assets/vector.png" class="p-1 bg-white" />
+                        </i>
+                        <h4>Investment Trading</h4>
+                    </div>
+                </div>
+                <div class="cardBusinessBody d-flex align-items-center justify-content-center">
+                    <ul class="">
+                        <li>- The best products start with Figma</li>
+                        <li>- Design with real data</li>
+                        <li>- Lightning fast prototyping</li>
+                        <li>- Fastest way to organize</li>
+                        <li>- Work at the speed of thought.</li>
+                        <a href="#">Learn More</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-auto cardBusiness">
+                <div class="cardBusinessHeader d-flex align-items-center justify-content-center">
+                    <div class="d-flex justify-content-evenly align-items-center w-100">
+                        <i class="p-3 rounded-circle bg-white">
+                            <img src="assets/vector.png" class="p-1 bg-white" />
+                        </i>
+                        <h4>Investment Trading</h4>
+                    </div>
+                </div>
+                <div class="cardBusinessBody d-flex align-items-center justify-content-center">
+                    <ul class="">
+                        <li>- The best products start with Figma</li>
+                        <li>- Design with real data</li>
+                        <li>- Lightning fast prototyping</li>
+                        <li>- Fastest way to organize</li>
+                        <li>- Work at the speed of thought.</li>
+                        <a href="#">Learn More</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="container clients mx-auto d-flex flex-column justify-content-center my-5 py-5">
             <div class="d-flex flex-column mx-auto headerClients">
                 <h2>What Clients Say</h2>
@@ -212,9 +289,10 @@
             </div>
 
             <div class="">
-                <div class="d-flex container flex-column flex-xl-row align-items-center justify-content-center my-5 py-5 col-7 mx-auto">
+                <div
+                    class="d-flex container flex-column flex-xl-row align-items-center justify-content-center my-5 py-5 col-7 mx-auto">
                     <div class="">
-                        <img src="assets/card-item.png" class="widthControl"/>
+                        <img src="assets/card-item.png" class="widthControl" />
                     </div>
                     <div class="">
                         <div class="">
@@ -457,11 +535,11 @@
                 <a class="my-2" href="#">
                     the quick fox jumps over the lazy dog
                 </a>
-                <a class="my-2" href="#">
-                    <i class="fa-brands fa-facebook fs-3 me-2"></i>
-                    <i class="fa-brands fa-instagram fs-3 mx-2"></i>
-                    <i class="fa-brands fa-twitter fs-3 mx-2"></i>
-                </a>
+                <div class="my-2">
+                    <a href="#"><i class="fa-brands fa-facebook fs-3 me-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fs-3 mx-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fs-3 mx-2"></i></a>
+                </div>
             </div>
             <div class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column">
                 <h6 class="mb-4">Company info</h6>
@@ -510,7 +588,7 @@
             </div>
         </div>
         <p class="text-center py-4 mb-0 bg-light">
-             Made With Love By Figmaland &copy; All Right Reserved
+            Made With Love By Figmaland &copy; All Right Reserved
         </p>
     </footer>
 </body>
