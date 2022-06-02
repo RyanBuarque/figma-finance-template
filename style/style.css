@@ -5,6 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
 }
 
 p {
@@ -21,12 +22,37 @@ p {
 .my-bg .box {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.my-bg .box nav {
+  max-width: 1150px;
+}
 @media (max-width: 991px) {
   .my-bg .navCustom ul {
-    margin: 0 auto;
+    margin: 0 auto !important;
+    text-align: center;
   }
-  .my-bg .navCustom a {
+  .my-bg .navCustom ul a {
     color: #737373 !important;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .my-bg .navCustom ul a:hover {
+    color: #252b42 !important;
+  }
+  .my-bg .navCustom h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #252b42;
+  }
+  .my-bg .navCustom .offcanvasIcons {
+    display: flex;
+    justify-content: end;
+    min-width: 200px;
+  }
+  .my-bg .navCustom .offcanvasIcons a {
+    margin: 0 15px;
+  }
+  .my-bg .navCustom .offcanvasIcons a:last-child {
+    margin-right: 0;
   }
 }
 
@@ -40,16 +66,40 @@ p {
 }
 
 .headerContainer {
+  width: 100%;
   max-width: 599px;
-  height: 342px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  text-align: start;
+}
+@media (max-width: 575px) {
+  .headerContainer h1 {
+    max-width: 313px;
+    font-weight: 700;
+    font-size: 40px !important;
+    color: white;
+  }
+  .headerContainer p {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    max-width: 302px;
+    margin: 35px 0;
+  }
 }
 @media (max-width: 991px) {
   .headerContainer {
     margin-bottom: 80px;
+    text-align: center;
+    justify-content: center;
+  }
+  .headerContainer p {
+    margin: 35px auto !important;
   }
 }
 .headerContainer h1 {
-  text-align: center;
   font-weight: 800;
   font-size: 58px;
   color: white;
@@ -58,35 +108,64 @@ p {
   font-size: 20px;
   font-weight: 500;
   color: white;
-  width: 376px;
-  height: 60px;
+  max-width: 376px;
   margin: 35px 0;
 }
 .headerContainer div {
-  height: 52px;
-  width: 354px;
+  margin: 0;
 }
 .headerContainer div a {
-  width: 187px;
-  height: 52px;
+  max-width: 187px;
   padding: 15px, 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .headerContainer div a:first-child {
   margin-right: 10px;
 }
 
+.headerPoints {
+  padding: 10px;
+  margin: 80px auto;
+  text-align: center;
+  min-width: 300px;
+  max-width: 470px;
+}
+.headerPoints h2 {
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: 700;
+}
+.headerPoints p {
+  margin: 20px auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cardHeader {
+  text-align: center;
+}
+.cardHeader h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.cardHeader p {
+  margin: 35px auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .bookContainer {
   border-radius: 10px;
-  width: 330px;
+  max-width: 330px;
   height: 610px;
-  left: 719px;
 }
 .bookContainer:only-child {
   padding: 40px;
   gap: 40px;
+}
+@media (max-width: 575px) {
+  .bookContainer:only-child {
+    padding: 20px;
+  }
 }
 .bookContainer h1 {
   margin-bottom: 40px;
@@ -97,19 +176,19 @@ p {
   margin-top: 40px;
   padding: 15px 40px;
   border-radius: 5px;
-  width: 248px;
+  max-width: 248px;
   height: 52px;
   font-weight: 700;
   font-size: 14px;
 }
 .bookContainer .bookInfo {
-  width: 248px;
+  max-width: 248px;
   height: 366px;
   border-radius: 1px;
 }
 .bookContainer .bookInfo .infoChild {
   margin: 10px 0px;
-  width: 248px;
+  max-width: 248px;
   height: 84px;
 }
 .bookContainer .bookInfo .infoChild label {
@@ -122,24 +201,6 @@ p {
   height: 50px;
 }
 
-.clients .headerClients {
-  margin-bottom: 80px;
-}
-.clients .headerClients h2 {
-  margin: 0 auto;
-  width: 361px;
-  height: 57px;
-  font-size: 40px;
-  font-weight: 700;
-}
-.clients .headerClients p {
-  margin: 10px auto;
-  width: 470px;
-  height: 40px;
-  font-size: 14px;
-  font-weight: 500;
-  text-align: center;
-}
 .clients .cardClients {
   margin: 0 auto;
   background-color: white;
@@ -165,76 +226,45 @@ p {
   text-align: center;
 }
 
-.aboutUs h2 {
-  margin: 0 auto;
-  max-width: 195px;
-  height: 57px;
-  font-size: 40px;
-  font-weight: 700;
-}
-.aboutUs p {
-  margin: 10px auto;
-  max-width: 470px;
-  height: 40px;
-  font-size: 14px;
-  font-weight: 500;
-  text-align: center;
-}
 @media (max-width: 767px) {
   .aboutUs .widthControl {
-    width: 333px;
+    max-width: 333px;
   }
 }
 .aboutUs .imgLegend {
   height: 356px;
 }
 .aboutUs .imgLegend .mainLegend h3 {
-  width: 306px;
-  height: 32px;
+  max-width: 306px;
   font-size: 24px;
   font-weight: 700;
 }
+@media (max-width: 575px) {
+  .aboutUs .imgLegend .mainLegend h3 {
+    font-size: 40px;
+    margin: 0;
+  }
+}
 .aboutUs .imgLegend .mainLegend p {
   text-align: start;
-  width: 330px;
-  height: 60px;
+  max-width: 330px;
   font-size: 14px;
   font-weight: 500;
 }
 .aboutUs .imgLegend .legendCommit h3 {
-  width: 286px;
-  height: 48px;
+  max-width: 286px;
   font-size: 16px;
   font-weight: 700;
   margin: 0;
 }
 .aboutUs .imgLegend .legendCommit p {
   text-align: start;
-  width: 286px;
-  height: 24px;
+  max-width: 286px;
   font-size: 14px;
   font-weight: 600;
   margin: 0;
 }
 
-.pricing .headerPricing {
-  margin-bottom: 80px;
-}
-.pricing .headerPricing h2 {
-  margin: 0 auto;
-  width: 151px;
-  height: 57px;
-  font-size: 40px;
-  font-weight: 700;
-}
-.pricing .headerPricing p {
-  margin: 10px auto;
-  width: 470px;
-  height: 40px;
-  font-size: 14px;
-  font-weight: 500;
-  text-align: center;
-}
 .pricing .pricingCard {
   margin: 0 2px;
   background-color: white;
@@ -261,17 +291,6 @@ p {
   margin: 10px auto;
   padding: 0;
 }
-.pricing .pricingCard .cardBody .cardHeader h2 {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-}
-.pricing .pricingCard .cardBody .cardHeader p {
-  margin: 35px auto;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-}
 .pricing .pricingCard .cardBody .pricingText p {
   margin: 0 4px;
   color: #23a6f0;
@@ -283,6 +302,7 @@ p {
   font-size: 14px;
   font-weight: 700;
   color: #23a6f0;
+  margin: 0;
 }
 .pricing .pricingCard .cardBody .pricingText p span:last-child {
   margin-top: 5px;
@@ -353,6 +373,7 @@ p {
   background-color: white;
   height: 610px;
   max-width: 610px;
+  width: 100%;
   padding: 50px;
 }
 .secondBook .secondBookContainer h4 {
@@ -382,7 +403,7 @@ p {
 }
 .secondBook .secondBookContainer input,
 .secondBook .secondBookContainer select {
-  max-width: 246px;
+  width: 100%;
   height: 50px;
 }
 
@@ -413,23 +434,28 @@ footer i:hover {
   border-radius: 20px;
 }
 
+.displayMobile {
+  display: none;
+}
+@media (max-width: 575px) {
+  .displayMobile {
+    display: block;
+  }
+}
+
+.displayDesktop {
+  display: none;
+}
+@media (min-width: 576px) {
+  .displayDesktop {
+    display: block;
+  }
+}
+
 .mobile {
   display: block;
   text-align: center;
-}
-.mobile .business {
-  margin: 75px 0;
-}
-.mobile .business h2 {
-  width: 323px;
-  font-size: 40px;
-  font-weight: 700;
-}
-.mobile .business p {
-  width: 321px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #737373;
+  padding: 0;
 }
 .mobile .cardBusiness {
   margin: 30px 0;
@@ -439,14 +465,14 @@ footer i:hover {
   border-radius: 10px;
 }
 .mobile .cardBusiness .cardBusinessHeader {
-  width: 354px;
+  max-width: 354px;
   height: 132px;
   background-color: #d9edff;
   border: 2px solid #d9edff;
   border-radius: 10px;
 }
 .mobile .cardBusiness .cardBusinessBody {
-  width: 352px;
+  max-width: 352px;
   height: 253px;
   background-color: white;
   border: 1px solid white;
@@ -455,6 +481,11 @@ footer i:hover {
 }
 .mobile .cardBusiness .cardBusinessBody ul {
   padding: 30px 50px;
+}
+@media (max-width: 575px) {
+  .mobile .cardBusiness .cardBusinessBody ul {
+    padding: 20px;
+  }
 }
 .mobile .cardBusiness .cardBusinessBody ul li {
   margin: 5px 0;
@@ -471,6 +502,95 @@ footer i:hover {
 @media (min-width: 576px) {
   .mobile {
     display: none !important;
+  }
+}
+
+.secondBookMobile {
+  width: 100%;
+  background-color: white;
+  padding: 0;
+}
+.secondBookMobile .secondBookContainerMobile {
+  background-color: white;
+  height: 800px;
+}
+.secondBookMobile .secondBookContainerMobile h4 {
+  margin-left: 11px;
+  font-size: 40px;
+  font-weight: 700;
+  width: 292px;
+}
+.secondBookMobile .secondBookContainerMobile h4 span {
+  font-size: 16px;
+  margin-left: -11px;
+}
+.secondBookMobile .secondBookContainerMobile button {
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.secondBookMobile .secondBookContainerMobile .secondBookInfoMobile {
+  width: 100%;
+  height: 420px;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.secondBookMobile .secondBookContainerMobile .secondBookInfoMobile .SecondInfoChildMobile {
+  margin: 10px 0px;
+  width: 100%;
+}
+.secondBookMobile .secondBookContainerMobile .secondBookInfoMobile .SecondInfoChildMobile label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.secondBookMobile .secondBookContainerMobile input,
+.secondBookMobile .secondBookContainerMobile select {
+  max-width: 100%;
+  height: 50px;
+}
+.secondBookMobile .secondBookContainerMobile textarea {
+  height: 140px;
+}
+
+.footerControl a,
+.footerControl h6 {
+  margin: 0;
+}
+@media (max-width: 575px) {
+  .footerControl {
+    align-items: center;
+  }
+  .footerControl .footerControlElement {
+    width: 80%;
+  }
+  .footerControl .footerControlElement h6 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  footer {
+    margin-top: 10px;
+    padding: 50px 0 0 0;
+  }
+
+  .cardClients {
+    height: 460px !important;
+  }
+  .cardClients .nameClients {
+    margin-top: 30px;
+  }
+  .cardClients .nameClients a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .cardClients .nameClients a:last-child {
+    color: #252b42;
+    margin-top: 15px;
   }
 }
 

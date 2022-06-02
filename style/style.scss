@@ -6,6 +6,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
 }
 
 p {
@@ -21,16 +22,47 @@ p {
 
   .box {
     background-color: rgba(0, 0, 0, 0.5);
+
+    nav {
+      max-width: 1150px;
+    }
   }
 
   .navCustom {
     @media (max-width: 991px) {
       ul {
-        margin: 0 auto;
+        margin: 0 auto !important;
+        text-align: center;
+
+        a {
+          color: rgba(115, 115, 115, 1) !important;
+          font-weight: 400;
+          font-size: 20px;
+        }
+
+        a:hover {
+          color: rgba(37, 43, 66, 1) !important;
+        }
       }
 
-      a {
-        color: rgba(115, 115, 115, 1) !important;
+      h5 {
+        font-size: 24px;
+        font-weight: 700;
+        color: rgba(37, 43, 66, 1);
+      }
+
+      .offcanvasIcons {
+        display: flex;
+        justify-content: end;
+        min-width: 200px;
+
+        a {
+          margin: 0 15px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
       }
     }
   }
@@ -47,15 +79,43 @@ p {
 }
 
 .headerContainer {
+  width: 100%;
   max-width: 599px;
-  height: 342px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+
+  @media (max-width: 575px) {
+    h1 {
+      max-width: 313px;
+      font-weight: 700;
+      font-size: 40px !important;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      max-width: 302px;
+      margin: 35px 0;
+    }
+  }
 
   @media (max-width: 991px) {
     margin-bottom: 80px;
+    text-align: center;
+    justify-content: center;
+
+    p {
+      margin: 35px auto !important;
+    }
   }
 
+  text-align: start;
+
   h1 {
-    text-align: center;
     font-weight: 800;
     font-size: 58px;
     color: rgba(255, 255, 255, 1);
@@ -65,22 +125,16 @@ p {
     font-size: 20px;
     font-weight: 500;
     color: white;
-    width: 376px;
-    height: 60px;
+    max-width: 376px;
     margin: 35px 0;
   }
 
   div {
-    height: 52px;
-    width: 354px;
+    margin: 0;
 
     a {
-      width: 187px;
-      height: 52px;
+      max-width: 187px;
       padding: 15px, 36px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     a:first-child {
@@ -89,15 +143,53 @@ p {
   }
 }
 
+.headerPoints {
+  padding: 10px;
+  margin: 80px auto;
+  text-align: center;
+  min-width: 300px;
+  max-width: 470px;
+
+  h2 {
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 20px auto;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.cardHeader {
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 35px auto;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
 .bookContainer {
   border-radius: 10px;
-  width: 330px;
+  max-width: 330px;
   height: 610px;
-  left: 719px;
 
   &:only-child {
     padding: 40px;
     gap: 40px;
+
+    @media (max-width: 575px) {
+      padding: 20px;
+    }
   }
 
   h1 {
@@ -110,20 +202,20 @@ p {
     margin-top: 40px;
     padding: 15px 40px;
     border-radius: 5px;
-    width: 248px;
+    max-width: 248px;
     height: 52px;
     font-weight: 700;
     font-size: 14px;
   }
 
   .bookInfo {
-    width: 248px;
+    max-width: 248px;
     height: 366px;
     border-radius: 1px;
 
     .infoChild {
       margin: 10px 0px;
-      width: 248px;
+      max-width: 248px;
       height: 84px;
 
       label {
@@ -141,27 +233,6 @@ p {
 }
 
 .clients {
-  .headerClients {
-    margin-bottom: 80px;
-
-    h2 {
-      margin: 0 auto;
-      width: 361px;
-      height: 57px;
-      font-size: 40px;
-      font-weight: 700;
-    }
-
-    p {
-      margin: 10px auto;
-      width: 470px;
-      height: 40px;
-      font-size: 14px;
-      font-weight: 500;
-      text-align: center;
-    }
-  }
-
   .cardClients {
     margin: 0 auto;
     background-color: white;
@@ -192,26 +263,9 @@ p {
 }
 
 .aboutUs {
-  h2 {
-    margin: 0 auto;
-    max-width: 195px;
-    height: 57px;
-    font-size: 40px;
-    font-weight: 700;
-  }
-
-  p {
-    margin: 10px auto;
-    max-width: 470px;
-    height: 40px;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-  }
-
   .widthControl {
     @media (max-width: 767px) {
-      width: 333px;
+      max-width: 333px;
     }
   }
 
@@ -221,16 +275,19 @@ p {
 
     .mainLegend {
       h3 {
-        width: 306px;
-        height: 32px;
+        max-width: 306px;
         font-size: 24px;
         font-weight: 700;
+
+        @media (max-width: 575px) {
+          font-size: 40px;
+          margin: 0;
+        }
       }
 
       p {
         text-align: start;
-        width: 330px;
-        height: 60px;
+        max-width: 330px;
         font-size: 14px;
         font-weight: 500;
       }
@@ -238,8 +295,7 @@ p {
 
     .legendCommit {
       h3 {
-        width: 286px;
-        height: 48px;
+        max-width: 286px;
         font-size: 16px;
         font-weight: 700;
         margin: 0;
@@ -247,8 +303,7 @@ p {
 
       p {
         text-align: start;
-        width: 286px;
-        height: 24px;
+        max-width: 286px;
         font-size: 14px;
         font-weight: 600;
         margin: 0;
@@ -258,27 +313,6 @@ p {
 }
 
 .pricing {
-  .headerPricing {
-    margin-bottom: 80px;
-
-    h2 {
-      margin: 0 auto;
-      width: 151px;
-      height: 57px;
-      font-size: 40px;
-      font-weight: 700;
-    }
-
-    p {
-      margin: 10px auto;
-      width: 470px;
-      height: 40px;
-      font-size: 14px;
-      font-weight: 500;
-      text-align: center;
-    }
-  }
-
   .pricingCard {
     margin: 0 2px;
     background-color: white;
@@ -306,21 +340,6 @@ p {
       margin: 10px auto;
       padding: 0;
 
-      .cardHeader {
-        h2 {
-          text-align: center;
-          font-size: 24px;
-          font-weight: 700;
-        }
-
-        p {
-          margin: 35px auto;
-          text-align: center;
-          font-size: 16px;
-          font-weight: 700;
-        }
-      }
-
       .pricingText {
         p {
           margin: 0 4px;
@@ -333,6 +352,7 @@ p {
             font-size: 14px;
             font-weight: 700;
             color: rgba(35, 166, 240, 1);
+            margin: 0;
 
             &:last-child {
               margin-top: 5px;
@@ -343,8 +363,10 @@ p {
         }
       }
     }
+
     .beneficios {
       width: 100%;
+
       .selectSecondary {
         color: #bdbdbd;
       }
@@ -358,6 +380,7 @@ p {
           font-size: 14px;
           font-weight: 600;
         }
+
         i {
           margin-right: 5px;
         }
@@ -368,10 +391,12 @@ p {
   .pricingCardSelected {
     background-color: #252b42;
     height: 705px;
+
     h2,
     p {
       color: white !important;
     }
+
     .pricingText p {
       color: #23a6f0 !important;
     }
@@ -379,6 +404,7 @@ p {
     @media (max-width: 991px) {
       margin: 30px auto;
     }
+
     //add disabled
   }
 }
@@ -390,11 +416,13 @@ p {
     max-width: 602px;
     height: 329px;
     color: rgba(255, 255, 255, 1);
+
     h3 {
       font-size: 40px;
       font-weight: 700;
       width: 476px;
     }
+
     p {
       font-size: 14px;
       font-weight: 500;
@@ -404,11 +432,9 @@ p {
 }
 
 .secondBook {
-  background: linear-gradient(
-    180deg,
-    rgba(37, 43, 66, 1) 50%,
-    RGB(248, 249, 250) 50%
-  );
+  background: linear-gradient(180deg,
+      rgba(37, 43, 66, 1) 50%,
+      RGB(248, 249, 250) 50%);
 
   img {
     margin-right: -1px;
@@ -418,6 +444,7 @@ p {
     background-color: white;
     height: 610px;
     max-width: 610px;
+    width: 100%;
     padding: 50px;
 
     h4 {
@@ -452,7 +479,7 @@ p {
 
     input,
     select {
-      max-width: 246px;
+      width: 100%;
       height: 50px;
     }
   }
@@ -490,26 +517,26 @@ footer {
   }
 }
 
+.displayMobile {
+  @media (max-width: 575px) {
+    display: block;
+  }
+
+  display: none;
+}
+
+.displayDesktop {
+  @media (min-width: 576px) {
+    display: block;
+  }
+
+  display: none;
+}
+
 .mobile {
   display: block;
   text-align: center;
-
-  .business {
-    margin: 75px 0;
-
-    h2 {
-      width: 323px;
-      font-size: 40px;
-      font-weight: 700;
-    }
-
-    p {
-      width: 321px;
-      font-size: 14px;
-      font-weight: 500;
-      color: rgba(115, 115, 115, 1);
-    }
-  }
+  padding: 0;
 
   .cardBusiness {
     margin: 30px 0;
@@ -519,7 +546,7 @@ footer {
     border-radius: 10px;
 
     .cardBusinessHeader {
-      width: 354px;
+      max-width: 354px;
       height: 132px;
       background-color: #d9edff;
       border: 2px solid #d9edff;
@@ -527,7 +554,7 @@ footer {
     }
 
     .cardBusinessBody {
-      width: 352px;
+      max-width: 352px;
       height: 253px;
       background-color: white;
       border: 1px solid white;
@@ -536,6 +563,10 @@ footer {
 
       ul {
         padding: 30px 50px;
+
+        @media (max-width: 575px) {
+          padding: 20px;
+        }
 
         li {
           margin: 5px 0;
@@ -556,5 +587,109 @@ footer {
 
   @media (min-width: 576px) {
     display: none !important;
+  }
+}
+
+.secondBookMobile {
+  width: 100%;
+  background-color: white;
+  padding: 0;
+
+  .secondBookContainerMobile {
+    background-color: white;
+    height: 800px;
+
+    h4 {
+      span {
+        font-size: 16px;
+        margin-left: -11px;
+      }
+
+      margin-left: 11px;
+      font-size: 40px;
+      font-weight: 700;
+      width: 292px;
+    }
+
+    button {
+      padding: 15px 40px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .secondBookInfoMobile {
+      width: 100%;
+      height: 420px;
+      border-radius: 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .SecondInfoChildMobile {
+        margin: 10px 0px;
+        width: 100%;
+
+        label {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    input,
+    select {
+      max-width: 100%;
+      height: 50px;
+    }
+
+    textarea {
+      height: 140px;
+    }
+  }
+}
+
+.footerControl {
+
+  a,
+  h6 {
+    margin: 0;
+  }
+
+  @media (max-width: 575px) {
+    align-items: center;
+
+    .footerControlElement {
+      width: 80%;
+
+      h6 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  footer {
+    margin-top: 10px;
+    padding: 50px 0 0 0;
+  }
+
+  .cardClients {
+    height: 460px !important;
+
+    .nameClients {
+      margin-top: 30px;
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+
+        &:last-child {
+          color: rgba(37, 43, 66, 1);
+          margin-top: 15px;
+        }
+      }
+    }
   }
 }

@@ -1,604 +1,862 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freshfinance</title>
-    <link rel="shortcut icon" href="https://static.figma.com/app/icon/1/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="https://static.figma.com/app/icon/1/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style/style.css" />
-</head>
+  </head>
 
-<body class="bg-light">
+  <body class="bg-light">
     <header class="my-bg">
-        <div class="box">
-            <nav class="navbar container navbar-expand-lg navbar-dark">
-                <div class="container mt-2">
-                    <a class="navbar-brand fw-bold px-3" href="# " title="Klever Finance Home">
-                        BrandName
+      <div class="box">
+        <nav class="navbar container navbar-expand-lg navbar-dark">
+          <div class="container mt-2 p-0">
+            <a
+              class="navbar-brand fw-bold ms-0 px-4"
+              href="# "
+              title="BrandName"
+            >
+              BrandName
+            </a>
+            <button
+              class="navbar-toggler me-1"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end navCustom"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  BrandName
+                </h5>
+                <div class="offcanvasIcons">
+                  <a href="#"><img src="assets/vector3.png" /></a>
+
+                  <a href="#">
+                    <img src="assets/icn shopping-cart .icn-xs.png" />
+                  </a>
+
+                  <a
+                    href="#"
+                    type="button"
+                    class="text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  >
+                    <img src="assets/icn menu .icn-xs.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="offcanvas-body d-flex justify-content-between m-0">
+                <ul class="navbar-nav m-0">
+                  <li class="nav-item mx-1">
+                    <a
+                      class="offcanvas-title nav-link active disabled"
+                      id="offcanvasNavbarLabel"
+                      aria-current="page"
+                      href=""
+                      id="thisPage"
+                    >
+                      Home
                     </a>
-                    <button class="navbar-toggler me-1" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon bg-danger"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end navCustom" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                                BrandName
-                            </h5>
-                            <div>
-                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-
-                                <a href="#" type="button" class="text-reset" data-bs-dismiss="offcanvas"
-                                    aria-label="Close">
-                                    <i><img src="assets/icn menu .icn-xs.png" /></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="offcanvas-body justify-content-around">
-                            <ul class="navbar-nav col-5 align-items-center justify-content-center">
-                                <li class="nav-item mx-1">
-                                    <a class="offcanvas-title nav-link active" id="offcanvasNavbarLabel"
-                                        aria-current="page" href="" id="thisPage">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="nav-item mx-1">
-                                    <a class="nav-link" href="#">Product</a>
-                                </li>
-                                <li class="nav-item mx-1">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li class="nav-item mx-1">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                            <ul class="navbar-nav d-none d-lg-flex col-5 align-items-center justify-content-end">
-                                <li class="nav-item mx-4">
-                                    <a class="nav-link" href="#">Login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn btn-azul" href="#" role="button">
-                                        Become a member
-                                        <i class="ms-2 fa-solid fa-arrow-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <div class="d-flex my-5">
-                <div
-                    class="d-flex flex-column flex-lg-row container justify-content-between align-items-center mx-auto my-5">
-                    <div class="d-flex flex-column headerContainer align-items-center">
-                        <h1>International Network</h1>
-                        <p>
-                            We know how large objects will act, but things on a small scale.
-                        </p>
-                        <div class="d-flex">
-                            <a role="button" href="#" class="btn btn-azul rounded-pill">
-                                Get Quote Now
-                            </a>
-                            <a role="button" href="#" class="btn btn-outline-light rounded-pill">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <form class="bg-light bookContainer">
-                            <h1>Book Appointment</h1>
-                            <div class="bookInfo">
-                                <div class="infoChild">
-                                    <label for="exampleInputName1" class="form-label">
-                                        Name *
-                                    </label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                        placeholder="Full Name *" />
-                                </div>
-                                <div class="infoChild">
-                                    <label for="exampleInputEmail1" class="form-label">
-                                        Email address *
-                                    </label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" placeholder="example@gmail.com" />
-                                </div>
-                                <div class="infoChild">
-                                    <label for="selectDepartament" class="form-label">
-                                        Departament *
-                                    </label>
-                                    <select class="form-select" aria-label="Default select example"
-                                        id="selectDepartament">
-                                        <option selected>Please Select</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="infoChild">
-                                    <label for="selectTime" class="form-label">Time *</label>
-                                    <select class="form-select" aria-label="Default select example" id="selectTime">
-                                        <option selected>4:00 Available</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-azul">
-                                Book Appointment
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">Product</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav d-none d-lg-flex align-items-center m-0">
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-azul" href="#" role="button">
+                      Become a member
+                      <i class="ms-2 fa-solid fa-arrow-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+        </nav>
+        <div class="d-flex my-5">
+          <div
+            class="d-flex flex-column flex-lg-row container justify-content-between align-items-center mx-auto my-5"
+          >
+            <div class="headerContainer">
+              <h1>International Network</h1>
+              <p>
+                We know how large objects will act, but things on a small scale.
+              </p>
+              <div>
+                <a role="button" href="#" class="btn btn-azul rounded-pill">
+                  Get Quote Now
+                </a>
+                <a
+                  role="button"
+                  href="#"
+                  class="btn btn-outline-light rounded-pill"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <form class="bg-light bookContainer">
+                <h1>Book Appointment</h1>
+                <div class="bookInfo">
+                  <div class="infoChild">
+                    <label for="exampleInputName1" class="form-label">
+                      Name *
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputName1"
+                      placeholder="Full Name *"
+                    />
+                  </div>
+                  <div class="infoChild">
+                    <label for="exampleInputEmail2" class="form-label">
+                      Email address *
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail2"
+                      aria-describedby="emailHelp"
+                      placeholder="example@gmail.com"
+                    />
+                  </div>
+                  <div class="infoChild">
+                    <label for="selectDepartament" class="form-label">
+                      Departament *
+                    </label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="selectDepartament"
+                    >
+                      <option selected>Please Select</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="infoChild">
+                    <label for="selectTime1" class="form-label">Time *</label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="selectTime1"
+                    >
+                      <option selected>4:00 Available</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-azul w-100">
+                  Book Appointment
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <main>
-        <div class="container mobile mx-auto d-flex flex-column justify-content-center">
-            <div class="d-flex flex-column mx-auto business">
-                <h2>Better Strategy With Quality Business</h2>
-                <p>
-                    Problems trying to resolve the conflict between the two major realms
-                    of Classical physics: Newtonian mechanics
-                </p>
-            </div>
-
-            <div class="d-flex flex-column align-items-center mx-auto cardBusiness">
-                <div class="cardBusinessHeader d-flex align-items-center justify-content-center">
-                    <div class="d-flex justify-content-evenly align-items-center w-100">
-                        <i class="p-3 rounded-circle bg-white">
-                            <img src="assets/vector.png" class="p-1 bg-white" />
-                        </i>
-                        <h4>Investment Trading</h4>
-                    </div>
-                </div>
-                <div class="cardBusinessBody d-flex align-items-center justify-content-center">
-                    <ul class="">
-                        <li>- The best products start with Figma</li>
-                        <li>- Design with real data</li>
-                        <li>- Lightning fast prototyping</li>
-                        <li>- Fastest way to organize</li>
-                        <li>- Work at the speed of thought.</li>
-                        <a href="#">Learn More</a>
-                    </ul>
-                </div>
-            </div>
-            <div class="d-flex flex-column align-items-center mx-auto cardBusiness">
-                <div class="cardBusinessHeader d-flex align-items-center justify-content-center">
-                    <div class="d-flex justify-content-evenly align-items-center w-100">
-                        <i class="p-3 rounded-circle bg-white">
-                            <img src="assets/vector.png" class="p-1 bg-white" />
-                        </i>
-                        <h4>Investment Trading</h4>
-                    </div>
-                </div>
-                <div class="cardBusinessBody d-flex align-items-center justify-content-center">
-                    <ul class="">
-                        <li>- The best products start with Figma</li>
-                        <li>- Design with real data</li>
-                        <li>- Lightning fast prototyping</li>
-                        <li>- Fastest way to organize</li>
-                        <li>- Work at the speed of thought.</li>
-                        <a href="#">Learn More</a>
-                    </ul>
-                </div>
-            </div>
-            <div class="d-flex flex-column align-items-center mx-auto cardBusiness">
-                <div class="cardBusinessHeader d-flex align-items-center justify-content-center">
-                    <div class="d-flex justify-content-evenly align-items-center w-100">
-                        <i class="p-3 rounded-circle bg-white">
-                            <img src="assets/vector.png" class="p-1 bg-white" />
-                        </i>
-                        <h4>Investment Trading</h4>
-                    </div>
-                </div>
-                <div class="cardBusinessBody d-flex align-items-center justify-content-center">
-                    <ul class="">
-                        <li>- The best products start with Figma</li>
-                        <li>- Design with real data</li>
-                        <li>- Lightning fast prototyping</li>
-                        <li>- Fastest way to organize</li>
-                        <li>- Work at the speed of thought.</li>
-                        <a href="#">Learn More</a>
-                    </ul>
-                </div>
-            </div>
+      <div
+        class="container mobile mx-auto d-flex flex-column justify-content-center"
+      >
+        <div class="d-flex flex-column mx-auto headerPoints">
+          <h2>Better Strategy With Quality Business</h2>
+          <p>
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
         </div>
-        <div class="container clients mx-auto d-flex flex-column justify-content-center my-5 py-5">
-            <div class="d-flex flex-column mx-auto headerClients">
-                <h2>What Clients Say</h2>
-                <p>
-                    Problems trying to resolve the conflict between the two major realms
-                    of Classical physics: Newtonian mechanics
-                </p>
+        <div class="d-flex flex-column align-items-center mx-auto cardBusiness">
+          <div
+            class="cardBusinessHeader d-flex align-items-center justify-content-center"
+          >
+            <div class="d-flex justify-content-evenly align-items-center w-100">
+              <i class="p-3 rounded-circle bg-white">
+                <img src="assets/vector.png" class="p-1 bg-white" />
+              </i>
+              <h4 class="ms-3">Investment Trading</h4>
             </div>
-
-            <div class="d-flex mx-auto">
-                <div class="row row-cols-1 row-cols-lg-3 g-4">
-                    <div class="col">
-                        <div class="cardClients">
-                            <img src="assets/user.1.jpg" width="149px" height="149px" />
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Slate helps you see how many more days you need to work to
-                                    reach your financial goal for the month and year.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-regular fa-star text-warning mx-1"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="cardClients">
-                            <img src="assets/user.2.jpg" width="149px" height="149px" />
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Slate helps you see how many more days you need to work to
-                                    reach your financial goal for the month and year.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-regular fa-star text-warning mx-1"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="cardClients">
-                            <img src="assets/user.3.jpg" width="149px" height="149px" />
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Slate helps you see how many more days you need to work to
-                                    reach your financial goal for the month and year.
-                                </p>
-                                <div class="d-flex justify-content-center">
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-solid fa-star text-warning mx-1"></i>
-                                    <i class="fa-regular fa-star text-warning mx-1"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div
+            class="cardBusinessBody d-flex align-items-center justify-content-center"
+          >
+            <ul>
+              <li>- The best products start with Figma</li>
+              <li>- Design with real data</li>
+              <li>- Lightning fast prototyping</li>
+              <li>- Fastest way to organize</li>
+              <li>- Work at the speed of thought.</li>
+              <a href="#">Learn More</a>
+            </ul>
+          </div>
         </div>
-
-        <div class="aboutUs">
-            <div class="d-flex flex-column">
-                <h2 class="">About Us</h2>
-                <p class="">
-                    Problems trying to resolve the conflict between the two major realms
-                    of Classical physics: Newtonian mechanics
-                </p>
+        <div class="d-flex flex-column align-items-center mx-auto cardBusiness">
+          <div
+            class="cardBusinessHeader d-flex align-items-center justify-content-center"
+          >
+            <div class="d-flex justify-content-evenly align-items-center w-100">
+              <i class="p-3 rounded-circle bg-white">
+                <img src="assets/vector.png" class="p-1 bg-white" />
+              </i>
+              <h4>Investment Trading</h4>
             </div>
-
-            <div class="">
-                <div
-                    class="d-flex container flex-column flex-xl-row align-items-center justify-content-center my-5 py-5 col-7 mx-auto">
-                    <div class="">
-                        <img src="assets/card-item.png" class="widthControl" />
-                    </div>
-                    <div class="">
-                        <div class="">
-                            <div class="d-flex flex-column imgLegend justify-content-between p-5">
-                                <div class="d-flex flex-column mainLegend mb-4">
-                                    <h3>Most trusted in our field</h3>
-                                    <p>
-                                        Most calendars are designed for teams. Slate is designed
-                                        for freelancers who want a simple way to plan their
-                                        schedule.
-                                    </p>
-                                </div>
-                                <div class="d-flex legendCommit">
-                                    <i class="me-3">
-                                        <img src="assets/icn settings .icn-md.png" alt="" />
-                                    </i>
-                                    <div class="d-flex flex-column">
-                                        <h3>the quick fox jumps over the lazy dog</h3>
-                                        <p>Things on a very small scale ...</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex legendCommit">
-                                    <i class="me-3">
-                                        <img src="assets/icn settings .icn-md (1).png" alt="" />
-                                    </i>
-                                    <div class="d-flex flex-column">
-                                        <h3>the quick fox jumps over the lazy dog</h3>
-                                        <p>Things on a very small scale...</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div
+            class="cardBusinessBody d-flex align-items-center justify-content-center"
+          >
+            <ul>
+              <li>- The best products start with Figma</li>
+              <li>- Design with real data</li>
+              <li>- Lightning fast prototyping</li>
+              <li>- Fastest way to organize</li>
+              <li>- Work at the speed of thought.</li>
+              <a href="#">Learn More</a>
+            </ul>
+          </div>
         </div>
-
-        <div class="pricing mx-auto d-flex flex-column justify-content-center my-5 py-5">
-            <div class="d-flex flex-column mx-auto headerPricing">
-                <h2>Pricing</h2>
-                <p>
-                    Problems trying to resolve the conflict between the two major realms
-                    of Classical physics: Newtonian mechanics
-                </p>
+        <div class="d-flex flex-column align-items-center mx-auto cardBusiness">
+          <div
+            class="cardBusinessHeader d-flex align-items-center justify-content-center"
+          >
+            <div class="d-flex justify-content-evenly align-items-center w-100">
+              <i class="p-3 rounded-circle bg-white">
+                <img src="assets/vector.png" class="p-1 bg-white" />
+              </i>
+              <h4>Investment Trading</h4>
             </div>
-            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-end mx-auto">
-                <div class="pricingCard">
-                    <div class="cardBody">
-                        <div class="cardHeader">
-                            <h2>FREE</h2>
-                            <p>Organize across all apps by hand</p>
-                        </div>
-                        <div class="pricingText d-flex justify-content-center">
-                            <p>0</p>
-                            <p class="d-flex flex-column align-items-start justify-content-center">
-                                <span>$</span>
-                                <span>Por Month</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="beneficios d-flex flex-column align-items-start">
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-success fs-3"></i>
-                            <p>Unlimited product updates</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-success fs-3"></i>
-                            <p>Unlimited product updates</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-success fs-3"></i>
-                            <p>Unlimited product updates</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
-                            <p>1GB Cloud storage</p>
-                        </div>
-
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
-                            <p>Email and community support</p>
-                        </div>
-                    </div>
-                    <a class="btn btn-azul" href="#" role="button">
-                        Become a member
-                        <i class="ms-2 fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="pricingCard pricingCardSelected">
-                    <div class="cardBody">
-                        <div class="cardHeader">
-                            <h2>STANDARD</h2>
-                            <p>Organize across all apps by hand</p>
-                        </div>
-                        <div class="pricingText d-flex justify-content-center">
-                            <p>9.99</p>
-                            <p class="d-flex flex-column align-items-start justify-content-center">
-                                <span>$</span>
-                                <span>Por Month</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="beneficios d-flex flex-column align-items-start">
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-success fs-3"></i>
-                            <p>Unlimited product updates</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-success fs-3"></i>
-                            <p>Unlimited product updates</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-success fs-3"></i>
-                            <p>Unlimited product updates</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
-                            <p>1GB Cloud storage</p>
-                        </div>
-
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
-                            <p>Email and community support</p>
-                        </div>
-                    </div>
-                    <!-- butão desabilitado -->
-                    <a class="btn btn-azul disabled" href="#" role="button">
-                        Become a member
-                        <i class="ms-2 fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="pricingCard">
-                    <div class="cardBody">
-                        <div class="cardHeader">
-                            <h2>PREMIUM</h2>
-                            <p>Organize across all apps by hand</p>
-                        </div>
-                        <div class="pricingText d-flex justify-content-center">
-                            <p>19.99</p>
-                            <p class="d-flex flex-column align-items-start justify-content-center">
-                                <span>$</span>
-                                <span>Por Month</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="beneficios d-flex flex-column align-items-start">
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-success fs-3"></i>
-                            <p>Unlimited product updates</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-success fs-3"></i>
-                            <p>Unlimited product updates</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check text-success fs-3"></i>
-                            <p>Unlimited product updates</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
-                            <p>1GB Cloud storage</p>
-                        </div>
-
-                        <div class="d-flex justify-content-center">
-                            <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
-                            <p>Email and community support</p>
-                        </div>
-                    </div>
-                    <a class="btn btn-azul" href="#" role="button">
-                        Become a member
-                        <i class="ms-2 fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
+          </div>
+          <div
+            class="cardBusinessBody d-flex align-items-center justify-content-center"
+          >
+            <ul>
+              <li>- The best products start with Figma</li>
+              <li>- Design with real data</li>
+              <li>- Lightning fast prototyping</li>
+              <li>- Fastest way to organize</li>
+              <li>- Work at the speed of thought.</li>
+              <a href="#">Learn More</a>
+            </ul>
+          </div>
         </div>
-        <div class="branches d-flex flex-column flex-lg-row align-items-center justify-content-center">
-            <div class="branchesText d-flex flex-column justify-content-evenly my-5">
-                <h3>We Have Branches All Over The World</h3>
-                <p>
-                    The gradual accumulation of information about atomic and small-scale
-                    behaviour during the first quarter of the 20th century, which gave
-                    some indications about how small things do behave, produced an
-                    increasing confusion which was Heisenberg, and Born.
+      </div>
+      <div
+        class="container clients mx-auto d-flex flex-column justify-content-center"
+      >
+        <div class="d-flex flex-column mx-auto headerPoints">
+          <h2>What Clients Say</h2>
+          <p>
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div class="d-flex mx-auto">
+          <div class="row row-cols-1 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="cardClients">
+                <img src="assets/user.1.jpg" width="149px" height="149px" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Slate helps you see how many more days you need to work to
+                    reach your financial goal for the month and year.
+                  </p>
+                  <div class="d-flex justify-content-center">
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-regular fa-star text-warning mx-1"></i>
+                  </div>
+                  <div class="d-flex flex-column d-sm-none justify-content-center nameClients">
+                    <a href="">Regina Miles</a>
+                    <a href="">Designer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="cardClients">
+                <img src="assets/user.2.jpg" width="149px" height="149px" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Slate helps you see how many more days you need to work to
+                    reach your financial goal for the month and year.
+                  </p>
+                  <div class="d-flex justify-content-center">
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-regular fa-star text-warning mx-1"></i>
+                  </div>
+                  <div class="d-flex flex-column d-sm-none justify-content-center nameClients">
+                    <a href="">Regina Miles</a>
+                    <a href="">Designer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="cardClients">
+                <img src="assets/user.3.jpg" width="149px" height="149px" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Slate helps you see how many more days you need to work to
+                    reach your financial goal for the month and year.
+                  </p>
+                  <div class="d-flex justify-content-center">
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-solid fa-star text-warning mx-1"></i>
+                    <i class="fa-regular fa-star text-warning mx-1"></i>
+                  </div>
+                  <div class="d-flex flex-column d-sm-none justify-content-center nameClients">
+                    <a href="">Regina Miles</a>
+                    <a href="">Designer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutUs">
+        <div class="d-flex flex-column headerPoints">
+          <h2>About Us</h2>
+          <p>
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div
+          class="d-flex container flex-column flex-xl-row align-items-center justify-content-center mx-auto"
+        >
+          <div>
+            <img
+              src="assets/card-item.png"
+              class="widthControl displayDesktop"
+            />
+            <img src="assets/card-item2.png" class="displayMobile img-fluid" />
+          </div>
+          <div
+            class="d-flex flex-column imgLegend justify-content-between mt-5 mt-xl-0"
+          >
+            <div class="d-flex flex-column mainLegend mb-4">
+              <h3>Most trusted in our field</h3>
+              <p>
+                Most calendars are designed for teams. Slate is designed for
+                freelancers who want a simple way to plan their schedule.
+              </p>
+            </div>
+            <div class="d-flex legendCommit">
+              <i class="me-3">
+                <img
+                  src="assets/icn settings .icn-md.png"
+                  class="displayDesktop"
+                />
+                <img
+                  src="assets/icn2settings .icn-md.png"
+                  class="displayMobile"
+                />
+              </i>
+              <div class="d-flex flex-column">
+                <h3>the quick fox jumps over the lazy dog</h3>
+                <p>Things on a very small scale ...</p>
+              </div>
+            </div>
+            <div class="d-flex legendCommit">
+              <i class="me-3">
+                <img
+                  src="assets/icn settings .icn-md (1).png"
+                  class="displayDesktop"
+                />
+                <img src="assets/Vectorv.png" class="displayMobile" />
+              </i>
+              <div class="d-flex flex-column">
+                <h3>the quick fox jumps over the lazy dog</h3>
+                <p>Things on a very small scale...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="pricing mx-auto d-flex flex-column justify-content-center mb-5 pb-5"
+        id="pricing"
+      >
+        <div class="d-flex flex-column mx-auto headerPoints">
+          <h2>Pricing</h2>
+          <p>
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-center align-items-end mx-auto"
+        >
+          <div class="pricingCard">
+            <div class="cardBody">
+              <div class="cardHeader" id="free">
+                <h2>FREE</h2>
+                <p>Organize across all apps by hand</p>
+              </div>
+              <div class="pricingText d-flex justify-content-center">
+                <p>0</p>
+                <p
+                  class="d-flex flex-column align-items-start justify-content-center"
+                >
+                  <span>$</span>
+                  <span>Por Month</span>
                 </p>
+              </div>
+            </div>
+            <div class="beneficios d-flex flex-column align-items-start">
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                <p>Unlimited product updates</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                <p>Unlimited product updates</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                <p>Unlimited product updates</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
+                <p>1GB Cloud storage</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
+                <p>Email and community support</p>
+              </div>
+            </div>
+            <a class="btn btn-azul" role="button" id="freeSelected" onClick="selectPlan(this.id)">
+              Become a member
+              <i class="ms-2 fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="pricingCard pricingCardSelected" id="standard">
+            <div class="cardBody">
+              <div class="cardHeader">
+                <h2>STANDARD</h2>
+                <p>Organize across all apps by hand</p>
+              </div>
+              <div class="pricingText d-flex justify-content-center">
+                <p>9.99</p>
+                <p
+                  class="d-flex flex-column align-items-start justify-content-center"
+                >
+                  <span>$</span>
+                  <span>Por Month</span>
+                </p>
+              </div>
+            </div>
+            <div class="beneficios d-flex flex-column align-items-start">
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                <p>Unlimited product updates</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                <p>Unlimited product updates</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                <p>Unlimited product updates</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
+                <p>1GB Cloud storage</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
+                <p>Email and community support</p>
+              </div>
+            </div>
+            <a
+              class="btn btn-azul disabled"
+              role="button"
+              id="standardSelected"
+              onClick="selectPlan(this.id)"
+            >
+              Become a member
+              <i class="ms-2 fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="pricingCard" id="premium">
+            <div class="cardBody">
+              <div class="cardHeader">
+                <h2>PREMIUM</h2>
+                <p>Organize across all apps by hand</p>
+              </div>
+              <div class="pricingText d-flex justify-content-center">
+                <p>19.99</p>
+                <p
+                  class="d-flex flex-column align-items-start justify-content-center"
+                >
+                  <span>$</span>
+                  <span>Por Month</span>
+                </p>
+              </div>
+            </div>
+            <div class="beneficios d-flex flex-column align-items-start">
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                <p>Unlimited product updates</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                <p>Unlimited product updates</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+                <p>Unlimited product updates</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
+                <p>1GB Cloud storage</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <i class="fa-solid fa-circle-check selectSecondary fs-3"></i>
+                <p>Email and community support</p>
+              </div>
+            </div>
+            <a class="btn btn-azul" role="button" id="premiumSelected" onClick="selectPlan(this.id)">
+              Become a member
+              <i class="ms-2 fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <script>
+              function selectPlan(clicked_id) {
+                let div = document.querySelector('.pricingCardSelected');
+                div.classList.remove('pricingCardSelected');
+
+                let previewBtn = div.parentElement.querySelector('.disabled')
+                previewBtn.classList.remove('disabled');
+
+                let btnSelected = document.getElementById(clicked_id);
+
+                btnSelected.parentNode.classList.add('pricingCardSelected');
+                btnSelected.classList.add('disabled');
+              }
+          </script>
+
+          <!-- <script>
+            let premiumBtn = document.getElementById('premiumSelected')
+
+            let standardBtn = document.getElementById('standardSelected')
+
+            let freeBtn = document.getElementById('freeSelected')
+
+            console.log()
+
+            function remove1() {
+              let div = document.querySelector('.pricingCardSelected');
+              div.classList.remove('pricingCardSelected');
+              remove2();
+            }
+
+            function remove2() {
+              let div = document.querySelector('.disabled');
+              div.classList.remove('disabled');
+            }
+            premiumBtn.onclick = function () {
+              remove1();
+              this.parentNode.classList.add('pricingCardSelected')
+              this.classList.add('disabled')
+            }
+
+            standardBtn.onclick = function (e) {
+              remove1();
+              
+              this.parentNode.classList.add('pricingCardSelected')
+              this.classList.add('disabled')
+            }
+            freeBtn.onclick = function (e) {
+              remove1();
+              this.parentNode.classList.add('pricingCardSelected')
+              this.classList.add('disabled')
+            }
+          </script> -->
+        </div>
+      </div>
+      <div class="displayDesktop">
+        <div class="branches">
+          <div
+            class="d-flex container flex-column flex-lg-row align-items-center justify-content-center"
+          >
+            <div
+              class="branchesText d-flex flex-column justify-content-evenly my-5"
+            >
+              <h3>We Have Branches All Over The World</h3>
+              <p>
+                The gradual accumulation of information about atomic and
+                small-scale behaviour during the first quarter of the 20th
+                century, which gave some indications about how small things do
+                behave, produced an increasing confusion which was Heisenberg,
+                and Born.
+              </p>
             </div>
             <img src="assets/col-md-5.png" class="img-fluid" />
+          </div>
         </div>
-        <div class="d-flex align-items-center justify-content-center secondBook py-5">
-            <img src="assets/media.png" class="img-fluid" />
-            <form class="secondBookContainer d-flex flex-column align-items-center justify-content-between">
-                <h4>Book Appointment</h4>
-                <div class="secondBookInfo">
-                    <div class="SecondInfoChild">
-                        <label for="exampleInputName1" class="form-label">
-                            Name *
-                        </label>
-                        <input type="password" class="form-control bg-light w-100" id="exampleInputPassword1"
-                            placeholder="Full Name *" />
-                    </div>
-                    <div class="SecondInfoChild">
-                        <label for="exampleInputEmail1" class="form-label">
-                            Email address *
-                        </label>
-                        <input type="email" class="form-control bg-light w-100" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="example@gmail.com" />
-                    </div>
-                    <div class="SecondInfoChild">
-                        <label for="selectDepartament" class="form-label">
-                            Departament *
-                        </label>
-                        <select class="form-select bg-light w-100" aria-label="Default select example"
-                            id="selectDepartament">
-                            <option selected>Please Select</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="SecondInfoChild">
-                        <label for="selectTime" class="form-label">Time *</label>
-                        <select class="form-select bg-light w-100" aria-label="Default select example" id="selectTime">
-                            <option selected>4:00 Available</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-azul w-100">
-                    Book Appointment
-                </button>
-            </form>
+        <div
+          class="d-flex align-items-center justify-content-center secondBook py-5"
+        >
+          <img src="assets/media.png" class="img-fluid" />
+          <form
+            class="secondBookContainer d-flex flex-column align-items-center justify-content-between ms-0"
+          >
+            <h4>Book Appointment</h4>
+            <div class="secondBookInfo">
+              <div class="SecondInfoChild">
+                <label for="exampleInputName2" class="form-label">
+                  Name *
+                </label>
+                <input
+                  type="text"
+                  class="form-control bg-light w-100"
+                  id="exampleInputName2"
+                  placeholder="Full Name *"
+                />
+              </div>
+              <div class="SecondInfoChild">
+                <label for="exampleInputEmail1" class="form-label">
+                  Email address *
+                </label>
+                <input
+                  type="email"
+                  class="form-control bg-light w-100"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="SecondInfoChild">
+                <label for="selectDepartament2" class="form-label">
+                  Departament *
+                </label>
+                <select
+                  class="form-select bg-light w-100"
+                  aria-label="Default select example"
+                  id="selectDepartament2"
+                >
+                  <option selected>Please Select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="SecondInfoChild">
+                <label for="selectTime2" class="form-label">Time *</label>
+                <select
+                  class="form-select bg-light w-100"
+                  aria-label="Default select example"
+                  id="selectTime2"
+                >
+                  <option selected>4:00 Available</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-azul w-100">
+              Book Appointment
+            </button>
+          </form>
         </div>
+      </div>
+      <div class="displayMobile">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center secondBookMobile p-0"
+        >
+          <img src="assets/cover.png" class="w-100" />
+          <form
+            class="secondBookContainerMobile d-flex flex-column align-items-center justify-content-between"
+          >
+            <h4>
+              <span>Contact Us</span>
+              <br />
+              Make an Appointment
+            </h4>
+            <div class="secondBookInfoMobile">
+              <div class="SecondInfoChildMobile">
+                <input
+                  type="text"
+                  class="form-control bg-light w-100"
+                  id="exampleInputName3"
+                  placeholder="Full Name *"
+                />
+              </div>
+              <div class="SecondInfoChildMobile">
+                <input
+                  type="email"
+                  class="form-control bg-light w-100"
+                  id="exampleInputEmail3"
+                  aria-describedby="emailHelp"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="SecondInfoChildMobile">
+                <select
+                  class="form-select bg-light w-100"
+                  aria-label="Default select example"
+                  id="selectDepartament3"
+                >
+                  <option selected>Please Select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="SecondInfoChildMobile">
+                <select
+                  class="form-select bg-light w-100"
+                  aria-label="Default select example"
+                  id="selectTime3"
+                >
+                  <option selected>4:00 Available</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="SecondInfoChildMobile">
+                <textarea
+                  class="form-control bg-light w-100"
+                  aria-label="With textarea"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-azul w-100 mb-5">
+              Book Appointment
+            </button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="d-flex container mx-auto flex-row justify-content-evenly flex-wrap py-5">
-            <div class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column">
-                <h6 class="mb-4">Get In Touch</h6>
-                <a class="my-2" href="#">
-                    the quick fox jumps over the lazy dog
-                </a>
-                <div class="my-2">
-                    <a href="#"><i class="fa-brands fa-facebook fs-3 me-2"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram fs-3 mx-2"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter fs-3 mx-2"></i></a>
-                </div>
-            </div>
-            <div class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column">
-                <h6 class="mb-4">Company info</h6>
-                <a class="my-2" href="#">
-                    About Us
-                </a>
-                <a class="my-2" href="#">
-                    Carrier
-                </a>
-                <a class="my-2" href="#">
-                    We are hiring
-                </a>
-                <a class="my-2" href="#">
-                    Blog
-                </a>
-            </div>
-            <div class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column">
-                <h6 class="mb-4">Features</h6>
-                <a class="my-2" href="#">
-                    Business Marketing
-                </a>
-                <a class="my-2" href="#">
-                    User Analytic
-                </a>
-                <a class="my-2" href="#">
-                    Live Chat
-                </a>
-                <a class="my-2" href="#">
-                    Unlimited Support
-                </a>
-            </div>
-            <div class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column">
-                <h6 class="mb-4">Resources</h6>
-                <a class="my-2" href="#">
-                    IOS & Android
-                </a>
-                <a class="my-2" href="#">
-                    Watch a Demo
-                </a>
-                <a class="my-2" href="#">
-                    Customers
-                </a>
-                <a class="my-2" href="#">
-                    API
-                </a>
-            </div>
+      <div
+        class="d-flex container mx-auto flex-column flex-sm-row justify-content-evenly flex-wrap py-5 footerControl"
+      >
+        <div
+          class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column footerControlElement"
+        >
+          <h6 class="mb-4">Get In Touch</h6>
+          <a class="my-2" href="#">
+            the quick fox jumps over the lazy dog
+          </a>
+          <div class="my-2 m-0" id="contact">
+            <a href="#"><i class="fa-brands fa-facebook fs-3 me-2 ms-0"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fs-3 mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fs-3 mx-2"></i></a>
+          </div>
         </div>
-        <p class="text-center py-4 mb-0 bg-light">
-            Made With Love By Figmaland &copy; All Right Reserved
-        </p>
+        <div
+          class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column footerControlElement"
+        >
+          <h6 class="mb-4">Company info</h6>
+          <a class="my-2" href="#">
+            About Us
+          </a>
+          <a class="my-2" href="#">
+            Carrier
+          </a>
+          <a class="my-2" href="#">
+            We are hiring
+          </a>
+          <a class="my-2" href="#">
+            Blog
+          </a>
+        </div>
+        <div
+          class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column footerControlElement"
+        >
+          <h6 class="mb-4">Features</h6>
+          <a class="my-2" href="#">
+            Business Marketing
+          </a>
+          <a class="my-2" href="#">
+            User Analytic
+          </a>
+          <a class="my-2" href="#">
+            Live Chat
+          </a>
+          <a class="my-2" href="#">
+            Unlimited Support
+          </a>
+        </div>
+        <div
+          class="d-flex col-4 m-4 col-lg-2 m-xl-0 flex-column footerControlElement"
+        >
+          <h6 class="mb-4">Resources</h6>
+          <a class="my-2" href="#">
+            IOS & Android
+          </a>
+          <a class="my-2" href="#">
+            Watch a Demo
+          </a>
+          <a class="my-2" href="#">
+            Customers
+          </a>
+          <a class="my-2" href="#">
+            API
+          </a>
+        </div>
+      </div>
+      <p class="text-center py-4 mb-0 bg-light">
+        Made With Love By Figmaland &copy; All Right Reserved
+      </p>
     </footer>
-</body>
+  </body>
 
-<!-- Bootstrap Popper and JavaScript  -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  <!-- Bootstrap Popper and JavaScript  -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-
+    crossorigin="anonymous"
+  ></script>
 </html>
