@@ -2,4 +2,4 @@
 
 https://dev-frontend-ryanbuarque-freshfinance.surge.sh/
 
-![Alt text](./assets/preview.png.png)
+![Alt text](./assets/preview.png)
