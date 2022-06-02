@@ -270,7 +270,6 @@ p {
   }
 
   .imgLegend {
-    //margin-left: 100px;
     height: 356px;
 
     .mainLegend {
@@ -404,8 +403,6 @@ p {
     @media (max-width: 991px) {
       margin: 30px auto;
     }
-
-    //add disabled
   }
 }
 
@@ -680,6 +677,7 @@ footer {
 
     .nameClients {
       margin-top: 30px;
+
       a {
         text-decoration: none;
         font-size: 14px;
